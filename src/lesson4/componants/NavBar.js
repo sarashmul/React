@@ -6,6 +6,7 @@ import Home from './HomePage';
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
+import Thankyou from './Thankyou';
 export default function NavBar(){
     // const[images,setImages]=useState([a,b,c,d,e,f]);
     // const[index,setIndex]=useState(0);
@@ -40,6 +41,7 @@ export default function NavBar(){
         <Route path="/Contact" element={<Contact></Contact>}></Route>
         <Route path="/Services" element={<Services></Services>}></Route>
         <Route path="/About" element={<About></About>}></Route>
+        <Route path="/thankyuo" element={<Thankyou></Thankyou>}></Route>
         
         </Routes>
         </BrowserRouter>
