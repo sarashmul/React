@@ -6,6 +6,8 @@ import Pizza from './lesson3/componants/ServerCall';
 import { BrowserRouter,Routes,Route,Link} from 'react-router-dom';
 import Home from './lesson4/componants/HomePage';
 import NavBar from './lesson4/componants/NavBar';
+import './lesson4/i18n.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     // <div className="App">

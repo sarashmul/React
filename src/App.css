@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+.black-background {
+  background-color: black; /* Set the background color to black */
+}
+
+.nav-item .nav-link {
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  color: #17a2b8; /* Bootstrap's default link color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.nav-item .nav-link::after {
+  content: ''; /* Create an empty content for the pseudo-element */
+  display: block;
+  width: 0; /* Start with no width */
+  height: 2px; /* Height of the underline */
+  background: white; /* Color of the underline */
+  transition: width 0.3s; /* Smooth transition */
+  position: absolute;
+  left: 50%; /* Center it initially */
+  bottom: -2px; /* Position it just below the text */
+}
+
+.nav-item .nav-link:hover::after {
+  width: 100%; /* Full width on hover */
+  left: 0; /* Align it to the left */
+}
+

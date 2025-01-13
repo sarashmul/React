@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
+
 // import a from '../../imag/1.jpg';
 // import b from '../../imag/3.jpg';
 // import c from '../../imag/4.jpg';
@@ -9,11 +11,13 @@ import { useState } from 'react';
 
 
 export default function Home(){
+    const {t}=useTranslation();
+
     // const[images,setImages]=useState([a,b,c,d,e,f]);
     // const[index,setIndex]=useState(0);
     return(
         <>
-       <p>HELLO</p>
+       <p>{t("HomePage")}</p>
 
 
     </> );
