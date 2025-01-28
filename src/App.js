@@ -8,30 +8,24 @@ import Home from './lesson4/componants/HomePage';
 import NavBar from './lesson4/componants/NavBar';
 import './lesson4/i18n.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Input from './lesson5/componants/inputTask.js';
+import Presentation from './lesson5/componants/PresentationTasks.js';
+import { Provider } from 'react-redux';
+import store from './lesson5/Redux/store.js';
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //      {/* <Printme name="sara"></Printme> */}
-    //      <Galery></Galery>
-    //     <Pizza></Pizza>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <NavBar></NavBar>
 
-            
+
+        <>
+        <Provider store={store}>
+        <div>
+         <h1> Redux Tasks App</h1>
+         <Presentation></Presentation>
+         <Input></Input>
+        </div>
+
+        </Provider>
+        </>    
 
     
   );

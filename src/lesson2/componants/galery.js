@@ -17,7 +17,6 @@ export default function Galery(){
     <Image path={index}></Image>
     <button disabled={index===0} onClick={() =>  setIndex(index-1)} >→</button>
 
-
     </> );
 }
 
