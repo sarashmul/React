@@ -6,7 +6,7 @@ import { add, remove } from "../Redux/action";
 
 export default function Input() {
 
-    const tasks = useSelector(state => state.todo);
+    const tasks = useSelector(state => state.task.todo);
 
     const dispatch = useDispatch();
 
@@ -22,15 +22,15 @@ export default function Input() {
 
     return (
         <>
-            <input className="task-input"onBlur={(e) => setNameTask(e.target.value)} placeholder="Name Task"/>
+            <input className="task-input"onBlur={(e) => setNameTask(e.target.value)} placeholder="Name Task" required/>
 
-            <input className="task-input"onBlur={(e) => setDeddline(e.target.value)} placeholder="Deadline"/>
+            <input className="task-input" type="date" onBlur={(e) => setDeddline(e.target.value)} placeholder="Deadline" required/>
 
-            <input className="task-input" onBlur={(e) => setStartTime(e.target.value)}placeholder="Start Time"/>
+            <input className="task-input" type="date" onBlur={(e) => setStartTime(e.target.value)}placeholder="Start Time" required/>
 
             <button className="add-task-button"
             onClick={() => {dispatch(add({ NameTask: nameTask, Deddline: deddline, StartTime: startTime, Id: id }));
-            setId(id + 1);}}>Add Task</button>
+            setId(id + 1);}} type="submit">Add Task</button>
 
         </>
 

@@ -12,6 +12,7 @@ import Input from './lesson5/componants/inputTask.js';
 import Presentation from './lesson5/componants/PresentationTasks.js';
 import { Provider } from 'react-redux';
 import store from './lesson5/Redux/store.js';
+import NavBarTask from './lesson5/componants/NavBar.js';
 function App() {
   return (
 
@@ -20,8 +21,8 @@ function App() {
         <Provider store={store}>
         <div>
          <h1> Redux Tasks App</h1>
-         <Presentation></Presentation>
-         <Input></Input>
+
+         <NavBarTask></NavBarTask>
         </div>
 
         </Provider>

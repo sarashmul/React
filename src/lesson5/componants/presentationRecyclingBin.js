@@ -1,15 +1,14 @@
 
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { add, remove } from "../Redux/action";
+import { add, remove, removeNever, restore } from "../Redux/action";
 import { Button } from "bootstrap";
-import Input from "./inputTask";
 
 
 
-export default function Presentation() {
+export default function PresentationRecyclingBin() {
 
-    const tasks = useSelector(state => state.task.todo);
+    const tasks = useSelector(state => state.RecyclingBin.recyclingBin);
 
     const dispatch = useDispatch();
 
@@ -25,9 +24,15 @@ export default function Presentation() {
 
                         {task.NameTask} - {task.StartTime} - {task.Deddline}
 
-                        <button className="remove-task-button" onClick={() => dispatch(remove(task))}>
+                        <button className="remove-task-button" onClick={() => dispatch(removeNever(task))}>
 
-                            Remove Task
+                            Remove never Task
+
+                        </button>
+
+                        <button className="remove-task-button" onClick={() => dispatch(restore(task))}>
+
+                            restore Task
 
                         </button>
 
@@ -36,7 +41,7 @@ export default function Presentation() {
                 ))}
 
             </ul>
-         <Input></Input>
+
         </>
 
     );

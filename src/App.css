@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -38,7 +38,7 @@
 }
 .black-background {
   background-color: black; /* Set the background color to black 
-}*/
+}
 
 .nav-item .nav-link {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
@@ -61,14 +61,14 @@
 .nav-item .nav-link:hover::after {
   width: 100%; /* Full width on hover */
   left: 0; /* Align it to the left */
-} */
+} 
 
 
 
 
-/* //lesson5 */
+/* lesson5 */
 
-.task-input {
+/* .task-input {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -78,7 +78,7 @@
 }
 
 .add-task-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; /* Green 
   color: white;
   padding: 10px 15px;
   border: none;
@@ -89,7 +89,7 @@
 }
 
 .add-task-button:hover {
-  background-color: #45a049; /* Darker green */
+  background-color: #45a049; /* Darker green 
 }
 
 .task-list {
@@ -106,7 +106,7 @@
 }
 
 .remove-task-button {
-  background-color: #ff4d4d; /* Red */
+  background-color: #ff4d4d; /* Red 
   color: white;
   border: none;
   padding: 8px 12px;
@@ -116,5 +116,103 @@
 }
 
 .remove-task-button:hover {
-  background-color: #ff1a1a; /* Darker red */
+  background-color: #ff1a1a; /* Darker red 
+} */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #343a40;
+  padding: 15px;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #adb5bd;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.task-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.task-item:hover {
+  background-color: #f1f1f1;
+}
+
+.remove-task-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-task-button:hover {
+  background-color: #c82333;
+}
+
+.add-task-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task-button:hover {
+  background-color: #218838;
+}
+
+.task-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+}
+
+.task-input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
 }

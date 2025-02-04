@@ -1,4 +1,4 @@
-import { ADD,REMOVE } from "./actionTipe";
+import { ADD,REMOVE,REMOVE_NEVER,RESTORE } from "./actionTipe";
 
 
 
@@ -8,7 +8,17 @@ export const add = (data) => ({
     payload: data,
 });
 
-export const remove = (id) => ({ // Assuming you want to remove by id
+export const remove = (task) => ({ // Assuming you want to remove by id
     type: REMOVE,
-    payload: id // Pass the id or index to be removed
+    payload: task // Pass the id or index to be removed
+});
+
+export const removeNever = (task) => ({ // Assuming you want to remove by id
+    type: REMOVE_NEVER,
+    payload: task // Pass the id or index to be removed
+});
+
+export const restore = (task) => ({ // Assuming you want to remove by id
+    type: RESTORE,
+    payload: task // Pass the id or index to be removed
 });
