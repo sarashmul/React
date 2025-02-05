@@ -13,6 +13,8 @@ import Presentation from './lesson5/componants/PresentationTasks.js';
 import { Provider } from 'react-redux';
 import store from './lesson5/Redux/store.js';
 import NavBarTask from './lesson5/componants/NavBar.js';
+import Chat from './lesson6/componants/chat.js';
+
 function App() {
   return (
 
@@ -22,7 +24,7 @@ function App() {
         <div>
          <h1> Redux Tasks App</h1>
 
-         <NavBarTask></NavBarTask>
+         <Chat></Chat>
         </div>
 
         </Provider>
