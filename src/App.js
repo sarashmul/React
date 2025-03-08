@@ -16,9 +16,11 @@ import NavBarTask from './lesson5/componants/NavBar.js';
 import Chat from './lesson6/componants/chat.js';
 import WithLog from './lesson7/componants/withLog.js';
 import Sara from './lesson7/componants/sara.js';
+import WithBorder from './lesson7/componants/withBorder.js';
 
 function App() {
   const SaraWithLog=WithLog(Sara);
+  const SaraWithBorder=WithBorder(Sara);
   return (
 
 
@@ -28,8 +30,8 @@ function App() {
          {/* <h1> Redux Tasks App</h1> */}
 
          {/* <Chat></Chat> */}
-         {/* <SaraWithLog></SaraWithLog> */}
-         <Sara></Sara>
+         <SaraWithBorder></SaraWithBorder>
+         {/* <Sara></Sara> */}
         </div>
 
         </Provider>

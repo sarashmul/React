@@ -267,3 +267,7 @@ h1 {
       transform: translateY(0);
   }
 }
+.Border {
+  border: 2px solid red; /* Red border */
+  padding: 10px; /* Optional: to give space inside the border */
+}
