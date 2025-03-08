@@ -22,7 +22,7 @@ function App() {
         <>
         <Provider store={store}>
         <div>
-         <h1> Redux Tasks App</h1>
+         {/* <h1> Redux Tasks App</h1> */}
 
          <Chat></Chat>
         </div>
