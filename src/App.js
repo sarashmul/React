@@ -17,7 +17,7 @@ import Chat from './lesson6/componants/chat.js';
 import WithLog from './lesson7/componants/withLog.js';
 import Sara from './lesson7/componants/sara.js';
 import WithBorder from './lesson7/componants/withBorder.js';
-
+import UserTable from './lesson8/componants/UserTable.js';
 function App() {
   const SaraWithLog=WithLog(Sara);
   const SaraWithBorder=WithBorder(Sara);
@@ -28,10 +28,11 @@ function App() {
         <Provider store={store}>
         <div>
          {/* <h1> Redux Tasks App</h1> */}
-
+        {/* <UserTable></UserTable> */}
          {/* <Chat></Chat> */}
-         <SaraWithBorder></SaraWithBorder>
+         {/* <SaraWithBorder></SaraWithBorder> */}
          {/* <Sara></Sara> */}
+         <NavBar></NavBar>
         </div>
 
         </Provider>
